@@ -1,29 +1,13 @@
-huffman-compress
+huffman-compress2
 ================
+
+This is a fork of Niklas Fiekas's [huffman-compress](https://github.com/niklasf/rust-huffman-compress), which is no longer maintained.
 
 [Huffman compression](https://en.wikipedia.org/wiki/Huffman_coding)
 given a probability distribution over arbitrary symbols.
 
-[![Build Status](https://travis-ci.org/niklasf/rust-huffman-compress.svg?branch=master)](https://travis-ci.org/niklasf/rust-huffman-compress)
-[![crates.io](https://img.shields.io/crates/v/huffman-compress.svg)](https://crates.io/crates/huffman-compress)
-[![docs.rs](https://docs.rs/huffman-compress/badge.svg)](https://docs.rs/huffman-compress)
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](#Alternatives)
-
-Alternatives
-------------
-
-This project has limited real-world utility. It may be useful to experiment
-with or learn about Huffman coding
-(for example, when working on
-[bespoke chess game compression for lichess.org](https://github.com/lichess-org/compression)),
-but there are better entropy coders (both in terms of compression ratio
-and performance) and better implementations.
-
-See [`constriction`](https://crates.io/crates/constriction) for composable
-entropy coders, models and streams.
-
-See [`arcode`](https://crates.io/crates/arcode) for a standalone implementation
-of arithmetic coding.
+[![crates.io](https://img.shields.io/crates/v/huffman-compress2.svg)](https://crates.io/crates/huffman-compress2)
+[![docs.rs](https://docs.rs/huffman-compress2/badge.svg)](https://docs.rs/huffman-compress2)
 
 Examples
 --------
@@ -66,12 +50,19 @@ Documentation
 
 [Read the documentation](https://docs.rs/huffman-compress)
 
+Serialization
+-------------
+
+Enable the `serde` feature for (de)serialization of the `Book` and `Tree` structs.
+
 Changelog
 ---------
 
-* to be released
-  - Switch to 2021 edition.
-
+* 0.7
+  - Update to `bit-vec` 0.8.
+  - Implement serde support.
+  - Switch to Rust 2021 edition.
+  - **huffman-compress2 fork starts here**
 * 0.6.1
   - Fix deprecation warning and remove `#[deny(warnings)]` (a future
     compatibility hazard in libraries).

@@ -1,11 +1,11 @@
 [package]
-name = "huffman-compress"
-version = "0.6.1" # remember to update html_root_url and changelog
-authors = ["Niklas Fiekas <niklas.fiekas@backscattering.de>"]
+name = "huffman-compress2"
+version = "0.7.0" # remember to update html_root_url and changelog
+authors = ["Niklas Fiekas <niklas.fiekas@backscattering.de>", "Thomas Daniels <daniels.thomas@pm.me>"]
 license = "MIT OR Apache-2.0"
 keywords = ["huffman", "compression", "decompression"]
 readme = "README.md"
-repository = "https://github.com/niklasf/rust-huffman-compress"
+repository = "https://github.com/thomas-daniels/rust-huffman-compress"
 categories = ["compression", "encoding", "algorithms"]
 description = "Huffman compression given a probability distribution over arbitrary symbols"
 edition = "2021"

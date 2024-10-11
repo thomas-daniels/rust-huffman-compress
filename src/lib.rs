@@ -12,8 +12,6 @@
 //! # Examples
 //!
 //! ```rust
-//! extern crate bit_vec;
-//! extern crate huffman_compress;
 //!
 //! # use std::error::Error;
 //! #
@@ -21,7 +19,7 @@
 //! use std::iter::FromIterator;
 //! use std::collections::HashMap;
 //! use bit_vec::BitVec;
-//! use huffman_compress::{CodeBuilder, Book, Tree};
+//! use huffman_compress2::{CodeBuilder, Book, Tree};
 //!
 //! let mut weights = HashMap::new();
 //! weights.insert("CG", 293);
@@ -56,7 +54,7 @@
 //! # }
 //! ```
 
-#![doc(html_root_url = "https://docs.rs/huffman-compress/0.6.1")]
+#![doc(html_root_url = "https://docs.rs/huffman-compress2/0.7.0")]
 #![forbid(unsafe_code)]
 #![deny(missing_docs)]
 #![deny(missing_debug_implementations)]

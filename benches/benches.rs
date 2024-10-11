@@ -1,6 +1,6 @@
 use bit_vec::BitVec;
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use huffman_compress::codebook;
+use huffman_compress2::codebook;
 use std::collections::HashMap;
 
 fn bench_encode_decode(c: &mut Criterion) {
