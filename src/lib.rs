@@ -236,7 +236,10 @@ impl<K: Ord + Clone> Book<K> {
         K: Borrow<Q>,
         Q: Ord,
     {
-        self.book.get(k).map(|code| buffer.extend(code)).ok_or(EncodeError {})
+        self.book
+            .get(k)
+            .map(|code| buffer.extend(code))
+            .ok_or(EncodeError {})
     }
 
     fn new() -> Book<K> {
@@ -424,7 +427,10 @@ impl<'a, K: Ord + Clone, W: Saturating + Ord + Clone> FromIterator<(&'a K, &'a W
     where
         T: IntoIterator<Item = (&'a K, &'a W)>,
     {
-        weights.into_iter().map(|(k, v)| (k.clone(), v.clone())).collect()
+        weights
+            .into_iter()
+            .map(|(k, v)| (k.clone(), v.clone()))
+            .collect()
     }
 }
 
