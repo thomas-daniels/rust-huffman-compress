@@ -172,8 +172,9 @@ impl<'a, K: Clone, I: IntoIterator<Item = bool>> Iterator for UnboundedDecoder<'
 }
 
 /// A codebook used for encoding.
+#[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
 #[derive(Clone, Debug)]
-pub struct Book<K> {
+pub struct Book<K: Ord + Clone> {
     book: BTreeMap<K, BitVec>,
 }
 

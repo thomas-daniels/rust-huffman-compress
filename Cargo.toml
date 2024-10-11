@@ -25,3 +25,6 @@ quickcheck = "1"
 
 [badges]
 travis-ci = { repository = "niklasf/rust-huffman-compress", branch = "master" }
+
+[features]
+serde = ["dep:serde", "bit-vec/serde"]
